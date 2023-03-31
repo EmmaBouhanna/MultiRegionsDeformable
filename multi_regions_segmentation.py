@@ -28,7 +28,7 @@ def get_params():
     parser.add_argument('--dilat_size', type=int, default=3, help="Dilation factor")
     parser.add_argument('--thresh', type=float, default=.1, help="Threshold for region merging")
     parser.add_argument('--it_view', type=int, default=10, help="Interval to plot results")
-    parser.add_argument('--save_video', required=False, help="If given, will save the video")
+    parser.add_argument('--save_video', required=False, help="If given, will save the video to required path")
 
     args = parser.parse_args()
     return args
