@@ -3,8 +3,8 @@ Multi Region Image Segmentation with a Single Level Set Function. This repositor
 
 ## Installation
 You need:
-- standard python libraires numpy, scikit-image 
-- opencv (for initialization purposes)
+- standard python libraires numpy, scikit-image, scipy, PIL
+- opencv (for visualization purposes)
 - scikit-fmm (you can install it via the command `pip install scikit-fmm`). 
 
 To reproduce the plots :
