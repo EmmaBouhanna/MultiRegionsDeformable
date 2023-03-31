@@ -69,7 +69,7 @@ def initialize_kmeans(I, n_clusters, new_size):
     kmeans = KMeans(n_clusters=n_clusters, random_state=0,
                     n_init="auto").fit(I.ravel()[:, None])
     regions = (
-        1 + (kmeans.predict(I.ravel()[:, None])).reshape(new_size, new_size))
+        1 + (kmeans.predict(I.ravel()[:, None])).reshape(new_size, new_size)).astype(float)
     return regions
 
 
