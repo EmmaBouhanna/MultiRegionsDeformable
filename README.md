@@ -18,7 +18,7 @@ In this repository, we used the nt-toolbox library, developped by Gabriel Peyré
 To execute the pipeline, you can run the following command:
 ```
 python multi_regions_segmentation.py \
-       --img_path="path/to/myfile.jpg \
+       --img_path="path/to/mypicture.jpg \
        --resize=200 \
        --n_regions_init=3 \
        --initialization="kmeans" \
@@ -28,7 +28,7 @@ python multi_regions_segmentation.py \
        --thresh=0.1 \
        --it_view=10 \
        --dilat_size=3 \
-       --save_video="../data/video/test_mosquee.mp4"
+       --save_video="path/to/myvideo.mp4"
 ```
 You can play around with the arguments listed above. For example, replace the initialization parameter by "circles" to initialize your regions with evenly spaced circles across the image. You can also vary the different thresholds.
 If you need any information about the parameters, just execute `python multi_regions_segmentation.py -h`.
