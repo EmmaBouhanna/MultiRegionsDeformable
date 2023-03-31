@@ -11,7 +11,7 @@ To reproduce the plots :
 - matplotlib
 - seaborn
 
-In this repository, we used the nt-toolbox library, developped by Gabriel Peyré, and transposed to Python language by Theo Bertrand (see : [url](https://github.com/TheoBertrand-Dauphine/MVA_NT_geodesic_methods))
+In this repository, we used the nt-toolbox library, developped by Gabriel Peyré, and transposed to Python language by Theo Bertrand (see : [nt-toolbox](https://github.com/TheoBertrand-Dauphine/MVA_NT_geodesic_methods))
 
 
 ## Usage
