@@ -1,5 +1,13 @@
 import matplotlib.pyplot as plt
 
+def plot_img_with_contours(I, regions, contours):
+    plt.figure(figsize=(8,8))
+    plt.imshow(regions)
+    plt.imshow(I, alpha=.6)
+    plt.scatter(contours[:,1], contours[:,0], c="pink", s=1)
+    plt.axis("off")
+    plt.show()
+
 def two_plot(p1, p2):
     """
     Plots two images next to each other
