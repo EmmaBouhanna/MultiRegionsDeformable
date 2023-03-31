@@ -72,7 +72,7 @@ def update_Phi(I,
 
                 #new_phi = new_phi + (Phi + dt*(np.abs(Fi - Fj))*norm_grad_phi)*mask_inter
                 new_phi = new_phi + (Phi + dt*(Fj - Fi)*norm_grad_phi)*mask_inter
-        new_phi = new_phi + mu*freg*norm_grad_phi
+    new_phi = new_phi + mu*freg*norm_grad_phi
     return new_phi, norm_grad_phi
 
 def get_eps_levels(regions_dilat, unique_regions, new_phi, eps_ls):
@@ -173,4 +173,4 @@ def merge_regions(regions, contours_regions, ci, thresh_merge):
         if np.abs(ci[neigh[0]] - ci[neigh[1]]) <= thresh_merge:
             print(f"Merging regions {neigh[0]} and {neigh[1]}")
             regions[regions == neigh[1]] = neigh[0]
-    return(regions)
+    return regions
